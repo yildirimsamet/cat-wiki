@@ -1,6 +1,5 @@
 import styles from './styles.module.scss'
 import {BiSearch} from 'react-icons/bi'
-
 const MainTop=()=>{
     return(
         <div className={styles.wrapper}>

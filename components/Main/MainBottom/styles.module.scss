@@ -1,0 +1,39 @@
+@import "../../../styles/config";
+.wrapper {
+  background-color: $light-green-bg;
+  padding: 15px 100px 100px 100px;
+  .title {
+    color: $dark-green;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    padding: 25px 0;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 2px;
+      background-color: $dark-green;
+      bottom: 18px;
+      left: 0;
+    }
+  }
+  .titleBig {
+    font-size: 48px;
+    font-weight: bold;
+    position: relative;
+    color: $dark-green;
+    padding-bottom: 25px;
+    & > span {
+      position: absolute;
+      right: 0;
+      bottom: 25px;
+      font-size: 18px;
+      color: $light-green;
+      transform: translateY(-50%);
+    }
+  }
+  .cardWrapper {
+    display: flex;
+  }
+}

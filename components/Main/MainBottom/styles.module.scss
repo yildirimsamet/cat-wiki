@@ -1,7 +1,11 @@
 @import "../../../styles/config";
 .wrapper {
   background-color: $light-green-bg;
-  padding: 15px 100px 100px 100px;
+  padding: 15px 40px 100px 100px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  min-height: 567px;
+
   .title {
     color: $dark-green;
     font-size: 18px;
@@ -35,5 +39,20 @@
   }
   .cardWrapper {
     display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 123;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -12px;
+      top: 0;
+      height: 75%;
+      transform: translateY(7%);
+      z-index: -1;
+      width: 25px;
+      border-radius: 15px;
+      background-color: $yellow;
+    }
   }
 }

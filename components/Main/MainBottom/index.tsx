@@ -5,7 +5,7 @@ import CatCard from '../../CatCard';
 const MainBottom=()=>{
     const [fiveCats,setFiveCats]=useState([])
     useEffect(()=>{
-        fetch("https://api.thecatapi.com/v1/breeds?page=1&limit=5",{
+        fetch("https://api.thecatapi.com/v1/breeds?page=1&limit=4",{
             method:"GET",
             headers:{
                 "x-api-key":process.env.API_KEY

@@ -9,6 +9,34 @@ const MainTop=()=>{
                 <div className={styles.inputWrapper}>
                     <input placeholder="Enter your breed" type="text"/>
                     <BiSearch fontSize="24"/>
+                    <div className={styles.searchResults}>
+                        <p>sa</p>
+                        <p>sa</p>
+                        <p>sa</p>
+                        <p>sa</p>
+                        <p>sa</p>
+                        <p>sa</p>
+                        <p>sa</p>
+                        <p>sa</p>
+                        <p>sa</p>
+                        <p>sa</p>
+                        <p>sa</p>
+                        <p>sa</p>
+                        <p>sa</p>
+                        <p>sa</p>
+                        <p>sa</p>
+                        <p>sa</p>
+                        <p>sa</p>
+                        <p>sa</p>
+                        <p>sa</p>
+                        <p>sa</p>
+                        <p>sa</p>
+                        <p>sa</p>
+                        <p>sa</p>
+                        <p>sa</p>
+                        <p>sa</p>
+                        <p>sa</p>
+                    </div>
                 </div>
                </div>
         </div>

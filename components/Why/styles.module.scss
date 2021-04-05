@@ -1,0 +1,62 @@
+@import "../../styles/config";
+.wrapper {
+  min-height: 590px;
+  display: flex;
+  .left {
+    max-width: 456px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    h2 {
+      font-weight: bold;
+      font-size: 48px;
+      color: $dark-green;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -16px;
+        left: 0;
+        width: 67px;
+        height: 3px;
+        background-color: $dark-green;
+      }
+    }
+    p {
+      font-weight: 500;
+      font-size: 18px;
+      color: $dark-green;
+      margin-top: 43px;
+      margin-bottom: 65px;
+    }
+    a {
+      font-weight: bold;
+      font-size: 18px;
+      color: $light-green;
+    }
+  }
+  .right {
+    display: flex;
+    justify-content: space-between;
+    img {
+      padding: 12px;
+    }
+    .img1 {
+      max-height: 293px;
+      max-width: 195px;
+    }
+    .img2 {
+      max-width: 273;
+      max-height: 167px;
+    }
+    .img3 {
+      max-width: 238px;
+      max-height: 385px;
+    }
+    & div:first-child {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+    }
+  }
+}

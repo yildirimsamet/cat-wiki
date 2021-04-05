@@ -1,0 +1,14 @@
+@import "../../styles//config";
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 37px;
+  padding-left: 100px;
+  background-color: black;
+  border-radius: 42px 42px 0 0;
+  color: white;
+  img {
+    filter: contrast(0);
+  }
+}

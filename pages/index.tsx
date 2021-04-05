@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Main from '../components/Main'
+import Why from '../components/Why'
 import styles from '../styles/Home.module.scss'
 
 export default function Home() {
@@ -11,7 +12,8 @@ export default function Home() {
       </Head>
      
       <Main/>
-    
+
+      <Why/>
     </div>
   )
 }

@@ -5,7 +5,7 @@ const Why=()=>{
         <div className={styles.wrapper}>
             <div className={styles.left}>
                 <h2>Why should you
-                    habe a cat?
+                    have a cat?
                 </h2>
                 <p>Having a cat around you can actually trigger the release of calmiing chemicals in your body which lower your stress and anxiety leves</p>
                 <Link href="/">

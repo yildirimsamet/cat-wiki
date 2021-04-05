@@ -2,4 +2,7 @@
   width: 1248px;
   height: 100vh;
   margin: 0 auto;
+  .main {
+    min-height: calc(100vh - 212px);
+  }
 }

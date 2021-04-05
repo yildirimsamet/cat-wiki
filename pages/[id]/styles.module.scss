@@ -1,0 +1,51 @@
+@import "../../styles/config";
+.top {
+  display: flex;
+  justify-content: space-around;
+
+  .img {
+    max-width: 370px;
+    max-height: 370px;
+    border-radius: 24px;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+
+    p {
+      color: $dark-green;
+      font-size: 16px;
+      margin-bottom: 32px;
+      font-weight: 500;
+    }
+    p span {
+      font-weight: bold;
+      width: 150px;
+      display: inline-block;
+      margin-right: 15px;
+    }
+    h3 {
+      font-weight: 600;
+      font-size: 36px;
+
+      margin-bottom: 25px;
+    }
+    .desc {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .block {
+      width: 60px;
+      height: 12px;
+      border-radius: 8px;
+      background: $block-color;
+      display: inline-block;
+      margin-right: 15px;
+    }
+    .block_fade {
+      @extend .block;
+      opacity: 0.2;
+    }
+  }
+}

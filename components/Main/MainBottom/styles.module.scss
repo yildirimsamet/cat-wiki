@@ -1,11 +1,10 @@
 @import "../../../styles/config";
 .wrapper {
   background-color: $light-green-bg;
-  padding: 15px 40px 100px 100px;
+  padding: 25px 40px 100px 100px;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
   min-height: 567px;
-
   .title {
     color: $dark-green;
     font-size: 18px;

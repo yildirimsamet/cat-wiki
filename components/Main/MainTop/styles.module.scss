@@ -5,6 +5,7 @@
   border-top-right-radius: 40px;
   background: url("/images/HeroImagemd.png");
   background-repeat: no-repeat;
+  max-height: 534px;
   .content {
     display: flex;
     flex-direction: column;
@@ -18,6 +19,51 @@
       font-size: 24px;
       margin: 35px 0;
     }
+    .searchResults {
+      margin-top: 15px;
+      width: 400px;
+      background-color: white;
+      max-height: 220px;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      z-index: 123;
+      border-radius: 24px;
+      padding: 15px 15px;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      & .searchResultsInner {
+        width: 365px;
+        background-color: white;
+        max-height: 190px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        &::-webkit-scrollbar-track {
+          border-radius: 55px;
+          padding: 15px 0 !important;
+        }
+        &::-webkit-scrollbar-thumb {
+          background: rgb(175, 174, 174);
+          border-radius: 55px;
+          padding: 15px 0 !important;
+        }
+        &::-webkit-scrollbar {
+          width: 6px;
+          padding: 15px 0 !important;
+          border-radius: 55px;
+        }
+        & .searchText {
+          font-weight: 500;
+          font-size: 18px;
+          color: black;
+          padding: 15px 5px;
+          border-radius: 5px;
+          &:hover {
+            background: rgba($color: #000000, $alpha: 0.1);
+          }
+        }
+      }
+    }
     .inputWrapper {
       background-color: white;
       color: $black;
@@ -29,38 +75,6 @@
       padding: 23px 28px;
       position: relative;
 
-      & .searchResults {
-        position: absolute;
-        bottom: calc(-100% + -50px);
-        left: 0;
-        transform: translateY(50%);
-        width: 395px;
-        height: 220px;
-        background-color: white;
-        max-height: 220px;
-        overflow-x: hidden;
-        overflow-y: scroll;
-        z-index: 123;
-        border-radius: 24px;
-        padding: 15px 5px;
-        &::-webkit-scrollbar-track {
-          // border-top-right-radius: 5px;
-          // border-bottom-right-radius: 5px;
-          border-radius: 55px;
-          padding: 15px 0 !important;
-        }
-        &::-webkit-scrollbar-thumb {
-          background: rgb(175, 174, 174);
-          border-radius: 55px;
-          padding: 15px 0 !important;
-        }
-        &::-webkit-scrollbar {
-          width: 10px;
-          padding: 15px 0 !important;
-          border-radius: 55px;
-          padding-right: 45px;
-        }
-      }
       & > input {
         flex: 1;
         outline: 0;

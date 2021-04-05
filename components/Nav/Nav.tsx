@@ -6,7 +6,7 @@ const Nav = ()=>{
         <nav className={styles.nav}>
             <Link href="/">
                 <a className={styles.logo}>
-                <Image width={127} height={42} src="/images/CatWikiLogo.svg" alt="cat"/>
+                <Image width={127} height={42} src="/images/CatwikiLogo.svg" alt="cat"/>
                 </a>
             </Link>
         </nav>

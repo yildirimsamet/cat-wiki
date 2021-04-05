@@ -19,7 +19,7 @@ const MainTop=()=>{
     return(
         <div className={styles.wrapper}>
                <div className={styles.content}>
-               <img  className={styles.logo} src="/images/CatWikiLogo.svg" alt="logo"/>
+               <img  className={styles.logo} src="/images/CatwikiLogo.svg" alt="logo"/>
                 <p className={styles.title}>Get to know more about your<br/>cat breed </p>
                 <div className={styles.inputWrapper}>
                     <input value={searchInput} onChange={handleInput} placeholder="Enter your breed" type="text"/>

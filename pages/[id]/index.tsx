@@ -4,6 +4,7 @@ import styles from './styles.module.scss';
 
 const SpesificCat=({data})=>{
     const catInfo=data[0].breeds[0];
+    console.log(data)
     const blockCreator=(num:number)=>{
      let myBlocks:any[]=[]
 
@@ -37,7 +38,18 @@ const SpesificCat=({data})=>{
               <p><span>Stranger friendly: </span>{blockCreator(catInfo.stranger_friendly).map(item=>item)}</p>
           </div>
           </div>
-          <div className={styles.bot}></div>
+          <div className={styles.bot}>
+              <h3 className={styles.botTitle}>Other photos</h3>
+              <div className={styles.botPhotos}>
+                  {data.map((item,index)=>{
+                      if(index>0){
+                          return(
+                              <img className={styles.botPhotosImg} src={item.url} alt={item.url}/>
+                          )
+                      }
+                  })}
+              </div>
+          </div>
        </>
     )
 }
@@ -46,7 +58,7 @@ export default SpesificCat;
 
 export const getServerSideProps:GetServerSideProps=async({query})=>{
 
-const res = await fetch(`https://api.thecatapi.com/v1/images/search?breed_id=${query.id}&limit=9&page=1`,{
+const res = await fetch(`https://api.thecatapi.com/v1/images/search?breed_id=${query.id}&limit=8&page=1`,{
     
     method:"GET",
     headers:{

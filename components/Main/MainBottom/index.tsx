@@ -23,7 +23,7 @@ const MainBottom=()=>{
            <div className={styles.cardWrapper}>
                 {fiveCats.map((cat)=>{
                     return(
-                        <CatCard key={cat.id} image={cat.image.url} name={cat.name} />
+                        <CatCard key={cat.id} id={cat.id} image={cat.image.url} name={cat.name} />
                     )
                 })}
            </div>

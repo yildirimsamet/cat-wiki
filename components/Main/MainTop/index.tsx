@@ -18,7 +18,6 @@ const MainTop=()=>{
         })
         .then(res=>res.json())
         .then(res=>{
-            console.log(res)
             setCats(res);
         })
     },[searchInput])

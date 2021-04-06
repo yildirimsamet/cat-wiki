@@ -2,7 +2,19 @@
 .top {
   display: flex;
   justify-content: space-around;
-
+  margin-bottom: 80px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 55px;
+    top: 35px;
+    z-index: -1;
+    height: 38%;
+    border-radius: 25px;
+    width: 35px;
+    background-color: $yellow;
+  }
   .img {
     max-width: 370px;
     max-height: 370px;
@@ -46,6 +58,36 @@
     .block_fade {
       @extend .block;
       opacity: 0.2;
+    }
+  }
+}
+.bot {
+  margin-bottom: 176px;
+  &Title {
+    font-size: 36px;
+    font-weight: 500;
+    color: $dark-green;
+    margin-bottom: 40px;
+  }
+  &Photos {
+    display: flex;
+    flex-wrap: wrap;
+    &Img {
+      width: 278px;
+      margin-right: 45px;
+      height: 278px;
+      border-radius: 24px;
+      margin-bottom: 53px;
+
+      &:nth-child(4) {
+        margin-right: 0;
+      }
+      &:nth-child(8) {
+        margin-right: 0;
+      }
+      &:nth-child(n + 4) {
+        margin-bottom: 0;
+      }
     }
   }
 }
